@@ -1,19 +1,24 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [ 0.3 ] - 06/11/2019
+
+- Refactored all functions
+- Checked using flake8 and docstrings linter.
+
 ## [ 0.2 ] - 06/11/2019
 
 ### Added
 
-- added configuration of script and making `config.json`
-- argvparser
+- Added configuration of script and making `config.json`
+- Added argvparser
 
 ### Changed
 
-- refactored all functions
-- changed STDOUT info and method
-- changed command executing method
+- Refactored all functions
+- Changed STDOUT info and method
+- Changed command executing method
 
 ## [ 0.1 ] - 02/26/2019
 
-Maked helper
+ - Script created
