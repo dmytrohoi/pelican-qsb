@@ -27,7 +27,7 @@ settings: dict
 def parse_commandline_arguments():
     """Parse commandline arguments passed to script."""
     global commandline_args
-    global parser
+    global epilog
 
     func_descriptions = "\n".join(
         f"\t'{name}' - {func.__doc__}" for name, func in FUNCS.items()
@@ -45,6 +45,8 @@ def parse_commandline_arguments():
                         help='make backup of current commit')
     parser.add_argument('-d', dest='allow_draft', action='store_true',
                         help='add drafts to repository')
+
+    epilog = parser.epilog
     commandline_args = parser.parse_args()
     return
 
@@ -235,7 +237,7 @@ def main():
     try:
         parse_commandline_arguments()
     except:
-        return print(parser.epilog)
+        return print(epilog)
 
     chosen_function = FUNCS.get(commandline_args.function)
     if chosen_function is not None:
