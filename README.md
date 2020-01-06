@@ -1,4 +1,4 @@
-# Pelican site builder helper
+# Pelican Quick Site Builder (pelican-qsb)
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d7c3dca874f04f4687b653f23f834630)](https://www.codacy.com/manual/dmytrohoi/pelican_makesite_script?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dmytrohoi/pelican_makesite_script&amp;utm_campaign=Badge_Grade)
@@ -17,14 +17,24 @@ sub-arguments.
 ## Usage
 
 ### Requirements
- - Pelican
- - Python >= 3.6
- - Git
+ - [Pelican](https://github.com/getpelican/pelican)
+ - [Python](https://python.org) >= 3.6
+ - [ghp-import](https://github.com/davisp/ghp-import)
 
-### Instruction:
- 1. Install and configure [Pelican](@getpelican) and Git
- 2. Clone this repository to your Pelican folder
- 3. When you first run - configure script
+### Get start:
+
+ 1. Install and configure [Pelican](@getpelican) - _[Instruction](https://docs.getpelican.com/en/stable/install.html)_
+ 2. Clone this repository using Git to your Pelican folder
+``` bash
+# Simple way to clone pelican-qsb
+git clone --depth=1 https://github.com/dmytrohoi/pelican-qsb.git qsb && rm -rf ./qsb/.git
+```
+ 3. Run pelican-qsb script for the first time and configure it
+``` bash
+# Command for run
+# NOTE: './qsb/' it's the PATH to pelican-qsb project dir
+python ./qsb/make_site.py
+```
 
 ## Functions:
 
