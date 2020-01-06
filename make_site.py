@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*- #
 
 """
-SITE BUILDER using Pelican
+QUICK SITE BUILDER for Pelican (https://github.com/getpelican)
 
 Script can build local server or push site to GitHub.
 Have additional sub-arguments for allow drafts and backup on push.
 
 ATTENTION: Use only in your virtual environment!
 
-Created by Dmytro Hoi - 2019 (c)
+Dmytro Hoi (https://dmytrohoi.com/), 2020
 """
 
 # from os import system
@@ -201,6 +201,7 @@ def start_local_server(*args):
     NOTE: Use Ctrl+C for stop server.
 
     """
+    print('[HELP] Use Ctrl+C for stop server!')
     _COMMANDS = [
         f'rm -rf {settings["output"]}',
         'fuser -k 8000/tcp',
