@@ -5,6 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/dmytrohoi/pelican_makesite_script )
 ![GitHub Release Date](https://img.shields.io/github/release-date/dmytrohoi/pelican_makesite_script)
+![PyPI](https://img.shields.io/pypi/v/pelican-qsb)
 
 ## About
 
