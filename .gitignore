@@ -1,3 +1,7 @@
 __*
-config.json
-Pipfile*
+*.json
+Pip*
+
+*.egg-info/
+dist/
+build/

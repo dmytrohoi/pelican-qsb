@@ -8,10 +8,12 @@
 
 ## About
 
-Script can help to build local server or push site to GitHub. Have additional 
+Script can help to build local server or push site to GitHub. Have additional
 sub-arguments.
 
-        Attention! Use only in your virtual enviroment!
+**Attention!**
+Use only in your virtual environment!
+All "git push" actions are used with the `--force` flag, so all commits will be rewritten.
 
 -----
 ## Usage
@@ -23,25 +25,47 @@ sub-arguments.
 
 ### Get start:
 
- 1. Install and configure [Pelican](@getpelican) - _[Instruction](https://docs.getpelican.com/en/stable/install.html)_
- 2. Clone this repository using Git to your Pelican folder
+Pre-requirements:
+
+- Install and configure [Pelican](@getpelican) - _[Instruction](https://docs.getpelican.com/en/stable/install.html)_
+
+Install script:
+  - From sources:
+1. Clone this repository using Git to your Pelican folder
+
 ``` bash
 # Simple way to clone pelican-qsb
 git clone --depth=1 https://github.com/dmytrohoi/pelican-qsb.git qsb && rm -rf ./qsb/.git
 ```
- 3. Run pelican-qsb script for the first time and configure it
+
+2. Run pelican-qsb script for the first time and configure it
+
 ``` bash
-# Command for run
 # NOTE: './qsb/' it's the PATH to pelican-qsb project dir
 python ./qsb/make_site.py
 ```
+
+  - From pip:
+
+1. Install script from pip:
+
+``` bash
+pip install pelican-qsb
+```
+
+2. Run pelican-qsb script in your Pelican directory for the first time and configure it:
+
+``` bash
+pelican-qsb
+```
+
 
 ## Functions:
 
 ``` bash
 github   [-d] [-b]    # make gh-output and push it to github repository
                       # (without [d]raft and [b]ackup as default)
-local                 # make local server using pelicanconf.py file 
+local                 # make local server using pelicanconf.py file
 backup                # backup all files in your Pelican directory to backup repository
 
 -h, --help                # print help info
