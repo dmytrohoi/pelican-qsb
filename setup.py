@@ -23,5 +23,9 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
+        "Framework :: Pelican",
+        "Framework :: Pelican :: Plugins",
+        "Intended Audience :: Developers",
+        "Topic :: Software Development :: Build Tools"
     ],
 )
