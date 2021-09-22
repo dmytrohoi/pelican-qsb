@@ -64,7 +64,6 @@ pip install pelican-qsb
 pelican-qsb
 ```
 
-
 ## Functions
 
 ``` bash
