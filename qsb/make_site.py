@@ -48,7 +48,8 @@ def parse_commandline_arguments():
 
 
 def configure() -> dict:
-    """Create a configuration file on first run by quiz.
+    """
+    Create a configuration file on first run by quiz.
 
     Args:
         None
@@ -99,7 +100,8 @@ def configure() -> dict:
 
 
 def shell_run(commands: list):
-    """Run bash 'command' and return info - 'Successful/Unsuccessful'.
+    """
+    Run bash 'command' and return info - 'Successful/Unsuccessful'.
 
     Args:
         setup: bool - if after error need try install requirements.txt
@@ -146,7 +148,8 @@ def shell_run(commands: list):
 
 
 def github_push(args):
-    """Make gh-output and push it to github page.
+    """
+    Make gh-output and push it to github page.
 
     Args:
         -d: bool - add drafts to repository
@@ -177,7 +180,8 @@ def github_push(args):
 
 
 def start_local_server(*_):
-    """Start local server using `pelicanconf.py` file.
+    """
+    Start local server using `pelicanconf.py` file.
 
     NOTE: Use Ctrl+C for stop server.
 
@@ -193,8 +197,11 @@ def start_local_server(*_):
 
 
 def make_backup(*_):
-    """Backup all files and directories in project directory
-    to backup repository."""
+    """
+    Backup all files and directories in project directory
+    to backup repository.
+    
+    """
     commands_list = [
         'git add -A',
         'git commit -m "Backup site using make_site script"',
