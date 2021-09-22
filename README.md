@@ -17,29 +17,33 @@ Use only in your virtual environment!
 All "git push" actions are used with the `--force` flag, so all commits will be rewritten.
 
 -----
+
 ## Usage
 
 ### Requirements
- - [Pelican](https://github.com/getpelican/pelican)
- - [Python](https://python.org) >= 3.6
- - [ghp-import](https://github.com/davisp/ghp-import)
 
-### Get start:
+  - [Pelican](https://github.com/getpelican/pelican)
+  - [Python](https://python.org) >= 3.6
+  - [ghp-import](https://github.com/davisp/ghp-import)
+
+### Get start
 
 Pre-requirements:
 
-- Install and configure [Pelican](@getpelican) - _[Instruction](https://docs.getpelican.com/en/stable/install.html)_
+  - Install and configure [Pelican](@getpelican) - _[Instruction](https://docs.getpelican.com/en/stable/install.html)_
 
 Install script:
+
   - From sources:
-1. Clone this repository using Git to your Pelican folder
+
+ 1. Clone this repository using Git to your Pelican folder
 
 ``` bash
 # Simple way to clone pelican-qsb
 git clone --depth=1 https://github.com/dmytrohoi/pelican-qsb.git qsb && rm -rf ./qsb/.git
 ```
 
-2. Run pelican-qsb script for the first time and configure it
+ 2. Run pelican-qsb script for the first time and configure it
 
 ``` bash
 # NOTE: './qsb/' it's the PATH to pelican-qsb project dir
@@ -48,20 +52,20 @@ python ./qsb/make_site.py
 
   - From pip:
 
-1. Install script from pip:
+ 1. Install script from pip:
 
 ``` bash
 pip install pelican-qsb
 ```
 
-2. Run pelican-qsb script in your Pelican directory for the first time and configure it:
+ 2. Run pelican-qsb script in your Pelican directory for the first time and configure it:
 
 ``` bash
 pelican-qsb
 ```
 
 
-## Functions:
+## Functions
 
 ``` bash
 github   [-d] [-b]    # make gh-output and push it to github repository
@@ -71,6 +75,7 @@ backup                # backup all files in your Pelican directory to backup rep
 
 -h, --help                # print help info
 ```
+
 -----
 
 _Created by Dmytro Hoi, 2019_
